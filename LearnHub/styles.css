@@ -1,3 +1,47 @@
+:root {
+    --navbar-color:#131313;
+    --hero-color:#000000;
+    --main-color:#131313;
+    --services-color:#131313;
+    --footer-color:#131313;
+    --text-color:#fff;
+    --base-variant: #131313;
+}
+
+.darkmode{
+    --navbar-color:#fde9df;
+    --hero-color:#e3f6f5;
+    --main-color:#fde9df;
+    --services-color:#fde9df;
+    --footer-color:#fde9df;
+    --text-color:#393e46;
+    --base-variant: #ea8a8a;
+    position: relative;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+    fill: #00ffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +52,7 @@
 }
 
 .navbar {
-    background: #131313;
+    background: var(--navbar-color);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -69,7 +113,7 @@
 }
 
 .navbar__links {
-    color: #fff;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +134,7 @@
 /* New code */
 
 .navbar__links { 
-    color: #ffffff; 
+    color: var(--text-color); 
     position: relative;
     display: flex;
   } 
@@ -135,7 +179,7 @@
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #fcb045,#fd1d1d,#833ab4);
     background: linear-gradient(to right, #fcb045,#fd1d1d,#833ab4); 
-    color: #fff;
+    color: var(--text-color);
     transition: all 0.3s ease;
 }
 
@@ -177,7 +221,7 @@
     }
 
     .navbar__menu.active {
-        background: #131313;
+        background: var(--navbar-color);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -195,7 +239,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: var(--text-color);
     }
 
     .navbar__item {
@@ -251,8 +295,8 @@
 /* Hero Section */
 
 .hero {
-    background: #000000;
-    background: linear-gradient(to right, #161616, #000000);
+    background: var(--hero-color);
+    background: linear-gradient(to right, var(--footer-color), var(--hero-color));
     padding: 200px 0;
 }
 
@@ -271,7 +315,7 @@
 .hero__heading {
     font-size: 100px;
     margin-bottom: 24px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .hero__heading span {
@@ -315,7 +359,7 @@
 /* About Section */
 
 .main {
-    background-color: #131313;
+    background-color: var(--main-color);
     padding: 10rem 0;
 }
 
@@ -333,7 +377,7 @@
 }
 
 .main__content {
-    color: #fff;
+    color: var(--text-color);
     width: 100%;
     padding: 20px;
 }
@@ -378,7 +422,7 @@
     padding: 20px 60px;
     border: none;
     border-radius: 4px;
-    color: #fff;
+    color: var(--text-color);
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -388,7 +432,7 @@
 .main__btn a {
     position: relative;
     z-index: 3;
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -405,7 +449,7 @@
 }
 
 .main__btn:hover {
-    color: #fff;
+    color: var(--text-color);
 }
 
 .main__btn:hover:after{
@@ -522,7 +566,7 @@ img {
 }
 
 .services {
-    background: #131313;
+    background: var(--services-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -607,7 +651,7 @@ img {
 }
 
 .services__card a {
-    color: #fff;
+    color: var(--text-color);
     padding: 14px 24px;
     border: none;
     outline: none;
@@ -695,7 +739,7 @@ img {
 /* Footer CSS */
 
 .footer__container {
-    background-color: #131313;
+    background-color: var(--footer-color);
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -704,7 +748,7 @@ img {
   }
   
   #footer__logo {
-    color: #fff;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -735,11 +779,11 @@ img {
   
   .footer__link--items h2 {
     margin-bottom: 16px;
-    color: #fff;
+    color: var(--text-color);
   }
   
   .footer__link--items a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     margin-bottom: 0.5rem;
     transition: 0.3 ease-out;
@@ -751,7 +795,7 @@ img {
   }
   
   .social__icon--link {
-    color: #fff;
+    color: var(--text-color);
     font-size: 24px;
   }
   
@@ -777,7 +821,7 @@ img {
   }
   
   .website__rights {
-    color: #fff;
+    color: var(--text-color);
   }
   
   @media screen and (max-width: 820px) {
