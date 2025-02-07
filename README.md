@@ -1,5 +1,5 @@
 # LearnHub – Responsive Educational Website
-## LearnHub is a modern and fully responsive educational website designed to provide a seamless learning experience. Built with HTML, CSS, and JavaScript, the website ensures optimal accessibility and interactivity across all devices. Whether viewed on desktops, tablets, or mobile phones, LearnHub adapts effortlessly to deliver an engaging user experience.
+### LearnHub is a modern and fully responsive educational website designed to provide a seamless learning experience. Built with HTML, CSS, and JavaScript, the website ensures optimal accessibility and interactivity across all devices. Whether viewed on desktops, tablets, or mobile phones, LearnHub adapts effortlessly to deliver an engaging user experience.
 
 # 🚀 Features
 - ✅ Fully responsive and mobile-friendly design
